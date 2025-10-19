@@ -1,0 +1,11 @@
+python-dotenv
+langchain==0.3.25
+langchain-core==0.3.65
+flask
+pypdf2
+sentence-transformers
+qdrant-client 
+langchain-groq==0.3.2
+langchain_text_splitters==0.3.8
+langsmith==0.3.45
+streamlit
