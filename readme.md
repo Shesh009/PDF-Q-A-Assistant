@@ -114,27 +114,30 @@ streamlit run homepage.py
 - The assistant will provide context-based answers
 
 ## Project Structure
-```bash
-.
-├── Backend
-│   ├── __pycache__/
-│   ├── embedder.py
-│   ├── example_env.env
-│   ├── main.py
-│   ├── pdf_parser.py
-│   ├── qdrant_handler.py
-│   ├── retrieval_chain.py
-│   └── text_splitter.py
-├── Db
-│   ├── __pycache__/
-│   └── qdrant_manager.py
-├── Frontend
-│   ├── homepage.py
-│   └── requirements.txt
-├── images/
-│   └── Architecture.png
-├── readme.md
-└── requirements.txt
+```
+PDF Q&A Assistant
+    ├── Backend
+    │   ├── __pycache__/
+    │   ├── embedder.py
+    │   ├── example_env.env
+    │   ├── main.py
+    │   ├── pdf_parser.py
+    │   ├── qdrant_handler.py
+    │   ├── retrieval_chain.py
+    │   └── text_splitter.py
+    ├── Db
+    │   ├── __pycache__/
+    │   └── qdrant_manager.py
+    ├── Frontend
+    │   ├── homepage.py
+    │   └── requirements.txt
+    ├── images/
+    |   ├── Screenshot1.png
+    |   ├── Screenshot2.png
+    |   ├── Screenshot3.png
+    │   └── Architecture.png
+    ├── readme.md
+    └── requirements.txt
 ```
 
 
