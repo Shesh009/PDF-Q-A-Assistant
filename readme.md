@@ -1,4 +1,4 @@
-# PDF Chatbot
+# PDF Q&A Assistant
 
 A web-based chatbot that allows users to upload PDF documents and ask questions about their content. The chatbot leverages **semantic embeddings**, **Qdrant vector database**, and **Groq LLM** to retrieve and generate context-aware answers based on the PDF content.
 
