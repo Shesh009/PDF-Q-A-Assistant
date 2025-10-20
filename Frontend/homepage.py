@@ -10,7 +10,7 @@ if "messages" not in st.session_state:
 if "pdf_uploaded" not in st.session_state:
     st.session_state.pdf_uploaded = False
 
-uploaded_file = st.file_uploader("Upload a PDF to begin chatting", type=["pdf"])
+uploaded_file = st.file_uploader("Upload a PDF to begin chatting", type=["pdf", "txt"])
 
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):

@@ -29,9 +29,13 @@ def upload_pdf():
 
         if not file.filename.endswith('.pdf'):
             return jsonify({'error': 'Only PDF files are allowed'}), 400
+        
+        if file.filename.endswith('.pdf'):
+            parser = PDFParser(file)
+            text = parser.extract_text()
+        elif file.filename.endswith('.txt'):
+            text = file.read().decode('utf-8')
 
-        parser = PDFParser(file)
-        text = parser.extract_text()
         splitter = TextSplitter(chunk_size=1000)
         splitted_text = splitter.split(text)
         embedder = Embedder()
